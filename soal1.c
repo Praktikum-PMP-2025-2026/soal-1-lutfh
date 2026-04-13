@@ -46,8 +46,9 @@ int main() {
     if(prem == 1) {
       printf("MASUK");
     }
-    else if(prem == 2 && Rad <= 2 && 8 <= Jam <= 18)
+    else if(prem == 2 && Rad <= 2 && 8 <= Jam <= 18){
       printf("MASUK");
+    }
     else if(prem == 3 && Rad == 0 && T < 380) {
       printf("MASUK");
     }
