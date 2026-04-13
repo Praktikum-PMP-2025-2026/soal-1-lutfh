@@ -39,24 +39,27 @@ float T;
 
 int main() {
   scanf("%d %f %d %d", &prem, &T, &Rad, &Jam);
+  
+  if (1 <= prem && prem <= 3 && Rad >= 0 && 0 <= Jam && Jam <= 23){
   T = T * 0.1;
 
-  if(prem == 1) {
-    printf("MASUK");
-  }
-  else if(prem == 2 && Rad <= 2 && 8 <= Jam && Jam <= 18)
-    printf("MASUK");
-  else if(prem == 3 && Rad == 0 && T < 380) {
-    printf("MASUK");
-  }
-  else if(T >= 39.1){
-    printf("KARANTINA");
-  }
-  else if(prem == 1 && (Jam < 6 || Jam > 20)){
-    printf("TOLAK");
-  }
-  else {
-    printf("TOLAK");
+    if(prem == 1) {
+      printf("MASUK");
+    }
+    else if(prem == 2 && Rad <= 2 && 8 <= Jam <= 18)
+      printf("MASUK");
+    else if(prem == 3 && Rad == 0 && T < 380) {
+      printf("MASUK");
+    }
+    else if(T >= 39.1){
+      printf("KARANTINA");
+    }
+    else if(prem == 1 && (Jam < 6 || Jam > 20)){
+      printf("TOLAK");
+    }
+    else {
+      printf("TOLAK");
+    }
   }
 }
 
