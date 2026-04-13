@@ -42,25 +42,27 @@ int main() {
   
   if (1 <= prem && prem <= 3 && Rad >= 0 && 0 <= Jam && Jam <= 23){
   T = T * 0.1;
-
-    if(prem == 1) {
+    if(Rad >= 6){
+      printf("TOLAK");
+    }
+    else if(T >= 39.0){
+      printf("KARANTINA");
+    }
+    else if(prem == 1 && (Jam < 6 || Jam > 20)){
+      printf("TOLAK");
+    }
+    else if(prem == 1) {
       printf("MASUK");
     }
     else if(prem == 2 && Rad <= 2 && 8 <= Jam && Jam <= 18){
       printf("MASUK");
     }
-    else if(prem == 3 && Rad == 0 && T < 380) {
-      printf("MASUK");
-    }
-    else if(T >= 39.1){
-      printf("KARANTINA");
-    }
-    else if(prem == 2){
+        else if(prem == 2){
       printf("PEMERIKSAAN");
     }
-    else if(prem == 1 && (Jam < 6 || Jam > 20)){
-      printf("TOLAK");
-    }
+    else if(prem == 3 && Rad == 0 && T < 380) {
+      printf("MASUK");
+    }    
     else {
       printf("TOLAK");
     }
