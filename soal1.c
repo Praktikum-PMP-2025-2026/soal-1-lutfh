@@ -60,7 +60,7 @@ int main() {
         else if(prem == 2){
       printf("PEMERIKSAAN");
     }
-    else if(prem == 3 && Rad == 0 && T < 380) {
+    else if(prem == 3 && Rad == 0 && T < 38.0) {
       printf("MASUK");
     }    
     else {
